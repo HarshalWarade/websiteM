@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #333;
+    align-items: center;
+}
+
+body {
+    background: rgb(247, 247, 247);
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #4e4e50;
+    transition: 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: rgb(198, 198, 198);
+}
+
+.navbar .menu a.active {
+    color: rgb(198, 198, 198);
+}
+
+.socials a {
+    color: #999;
+    font-size: 20px;
+}
+
+.container {
+    height: calc(100vh - 13vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 30px;
+}
+.features{
+    color: #444;
+}
+.container .titleweb {
+    font-size: 55px;
+    text-align: center;
+    /* border-image: linear-gradient(#0729c3, #ff3769) 30;
+    border-width: 10px;
+    border-style: solid; */
+    color: #1d1d1d;
+}
+
+.container .titleweb .color {
+    color: #0729c3;
+    font-weight: 800;
+    border-bottom: 2px solid linear-gradient(45deg,red,blue);
+    background: -webkit-linear-gradient(45deg,#0729c3, #ff3769);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container p {
+    line-height: 30px;
+    color: rgb(119, 119, 119);
+}
+
+#learnMore {
+    position: relative;
+    padding: 10px 30px;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    background: linear-gradient(90deg, #ff3769, #c70d3b);
+}
+
+#learnMore:nth-child(2) {
+    background: linear-gradient(90deg, #ec42ff, #0710c3);
+}
+
+.rippleClass {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: hd 1s linear infinite;
+}
+
+@keyframes hd {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 500px;
+        opacity: 0;
+        height: 500px;
+    }
+}
+.affectem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.introText{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.cardsSection{
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 1fr;
+}
+.cardContainer{
+    display: flex;
+    background: white;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    /* height: auto; */
+    padding: 40px 0;
+    position: relative;
+    /* top: -50px; */
+
+}
+.mainHolder{
+    position: relative;
+    width: 22%;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+    background: #fff;
+    align-items: center;
+    background: linear-gradient(123deg,#ff628a, #444dff);
+    /* border-radius: 12px; */
+}
+.holderCard{
+    height: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.4s ease;
+    padding: 30px;
+    background: #fff;
+    /* border-radius: 12px; */
+}
+.holderCard:hover{
+    transition: 0.4s ease;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    position: relative;
+    background: #fff;
+    transform: translateY(-5px);
+}
+.properp{
+    line-height: 27px;
+    text-align: justify;
+}
+.matin{
+    font-weight: normal;
+}
+.skills h1{
+    text-align: center;
+    height: 16vh;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageGallery{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+.cardHolderImg{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.cardHolderImg:hover{
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.06);
+    transform: translateY(-20px);
+}
+.cardHolderImg .cardIcons{
+    color: #444;
+    font-size: 50px;
+    height: 120px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.53);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+.contentCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 30px;
+}
+.contentCard h4{
+    font-weight: 800;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+.contentCard p{
+    line-height: 32px;
+    text-align: justify;
+}
+.helpSection{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - 40vh);
+}
+.love h1{
+    text-align: center;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.helpSection .imgDiv{
+    /* border: 2px solid black; */
+    height: calc(100vh - 40vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpSection .imgDiv img{
+    height: 70%;
+}
+.helpSection .textContent{
+    height: calc(100vh - 40vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 40px;
+    line-height: 34px;
+}
+.headingMore{
+    border-bottom: 1px solid #ccc;
+}
+*::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}
+.works{
+    /* height: 100vh; */
+    border: 2px solid red;
+}
+.works h2{
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+/* WantToWorkPage */
+
+/* End of "want to work" page */
+
+@media screen and (max-width: 380px){
+    #learnMore{
+        font-size: 15px;
+    }
+    .introText{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .cardsSection{
+        display: grid;
+        /* margin-top:100px; */
+        padding: 20px;
+        background: rgb(247, 247, 247);
+        grid-template-rows: 1fr 1fr;
+    }
+    .cardContainer{
+        margin-top: 80px;
+        display: flex;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        top: 0px;
+    }
+    .holderCard{
+        position: relative;
+        width: 100%;
+        /* border: 1px solid #ccc; */
+        border-radius: 7px;
+        height: 80%;
+        display: flex;
+        padding: 30px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+        background: #fff;
+        /* justify-content: center;
+         */
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .cardContainer{
+        display: flex;
+        justify-content: center;
+        /* gap: 5rem; */
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        /* gap: 3rem; */
+        padding: 40px 0;
+        position: relative;
+        top: 0px;
+    }
+    .mainHolder{
+        position: relative;
+        width: 100%;
+        display: flex;
+        box-shadow: none;
+        background: none;
+        align-items: center;
+        background: #fff;
+        /* flex-direction: column; */
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    }
+    /* background: red; */
+    .matin{
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
+    .holderCard{
+        padding: 30px;
+        box-shadow: none;
+        background: #fff;
+    }
+    .container .titleweb {
+        font-size: 36px;
+    }
+    .features{
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .imageGallery{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .helpSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .love h1 {
+        margin-bottom: 140px;
+    }
+    .helpSection .imgDiv{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .imageGallery{
+        padding: 20px 0;
+    }
+}
